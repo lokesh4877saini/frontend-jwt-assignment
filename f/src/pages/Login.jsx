@@ -20,7 +20,7 @@ const Login = () => {
             password: password,
         };
         const res = await axios.post(
-            `${BACKEND_URI}/auth/login`,
+                `${BACKEND_URI}/api/auth/login`,
             data
         );
         console.log("Login response:", res.data);

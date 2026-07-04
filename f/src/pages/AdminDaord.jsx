@@ -12,7 +12,7 @@ const AdminDashboard = () => {
     const getUsers = async () => {
         try {
             const res = await axios.get(
-                `${BACKEND_URI}/userData/users`,
+                `${BACKEND_URI}/api/userData/users`,
                 {
                     headers: {
                         Authorization: `Bearer ${token}`,
@@ -29,7 +29,7 @@ const AdminDashboard = () => {
     const deleteUser = async (id) => {
         try {
             await axios.delete(
-                `${BACKEND_URI}/userData/users/${id}`,
+                `${BACKEND_URI}/api/userData/users/${id}`,
                 {
                     headers: {
                         Authorization: `Bearer ${token}`,

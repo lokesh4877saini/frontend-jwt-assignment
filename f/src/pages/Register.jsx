@@ -23,7 +23,7 @@ const Register = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         const res = await axios.post(
-            `${BACKEND_URI}/auth/register`,
+                `${BACKEND_URI}/api/auth/register`,
             formData
         );
 
