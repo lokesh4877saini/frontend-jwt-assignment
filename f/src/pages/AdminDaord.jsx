@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { useAuth } from "../context/AuthContext";
-import "../css/AdminDashboard.css";
+import "../css/admindashboard.css";
 
 const BACKEND_URI = import.meta.env.VITE_BACKEND_URI;
 

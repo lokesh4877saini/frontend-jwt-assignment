@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import { useNavigate,Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
-import "../css/Login.css";
+import "../css/login.css";
 const BACKEND_URI = import.meta.env.VITE_BACKEND_URI;
 console.log("BACKEND_URI:", BACKEND_URI);
 const Login = () => {
