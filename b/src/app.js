@@ -4,7 +4,7 @@ const cors = require('cors');
 const app = express();
 app.use(
     cors({
-        origin: ["http://localhost:5173"],
+        origin: ["http://localhost:5173","https://frontend-jwt-assignment.netlify.app"],
     })
 );
 const connectDB = require('./config/db');
