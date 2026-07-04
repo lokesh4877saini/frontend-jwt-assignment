@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route ,useNavigate} from "react-router-dom";
 
 import { AuthProvider } from "./context/AuthContext";
 import ProtectedRoute from "./component/ProtectedRoute";
@@ -11,6 +11,7 @@ import AdminDashboard from "./pages/AdminDaord";
 import Unauthorized from "./pages/Unauthorized";
 import "./App.css";
 function App() {
+    const Navigate = useNavigate();
     return (
         <BrowserRouter>
             <AuthProvider>
