@@ -13,7 +13,7 @@ const Dashboard = () => {
         const getUser = async () => {
             try {
                 const res = await axios.get(
-                    `${BACKEND_URI}/api/userData/user/${user._id}`,
+                    `${BACKEND_URI}api/userData/user/${user._id}`,
                     {
                         headers: {
                             Authorization: `Bearer ${token}`,
