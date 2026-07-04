@@ -3,7 +3,7 @@ import axios from "axios";
 import { useAuth } from "../context/AuthContext";
 
 const BACKEND_URI = import.meta.env.VITE_BACKEND_URI;
-import "../css/Dashboard.css";
+import "../css/dashboard.css";
 const Dashboard = () => {
     const { token, user } = useAuth();
 

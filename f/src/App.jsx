@@ -17,7 +17,7 @@ function App() {
                 <Header />
 
                 <Routes>
-                    <Route path="/" element={<Login />} />
+                     <Route path="/" element={<Navigate to="/login" replace />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/register" element={<Register />} />
                     <Route path="/unauthorized" element={<Unauthorized />} />
