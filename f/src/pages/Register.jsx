@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link,useNavigate } from "react-router-dom";
 import axios from "axios";
 const BACKEND_URI = import.meta.env.VITE_BACKEND_URI;
-import "../css/register.css";
+import "../css/Register.css";
 const Register = () => {
     const navigate = useNavigate();
     const [formData, setFormData] = useState({
